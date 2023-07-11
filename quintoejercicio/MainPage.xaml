@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="quintoejercicio.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="20,35,20,20">
+
+            <Image Source="rectangulo.png" WidthRequest="300"/>
+            
+            <Entry x:Name="Altura" Placeholder="Ingrese la altura"
+                   Keyboard="Numeric"/>
+
+           
+
+            <Entry x:Name="basee" Placeholder="Ingrese la base"
+                   Keyboard="Numeric"/>
+
+            <Entry x:Name="PerimetroRespuesta" Placeholder="perimetro"
+                   Keyboard="Numeric"/>
+
+            <Entry x:Name="SuperficieRespuesta" Placeholder="superficie"
+                   Keyboard="Numeric"/>
+
+
+            <Button Text="Calcular el perimetro"
+                    Clicked="Button_Clicked"/>
+
+            <Button Text="Calcular la superficie"
+                    Clicked="Button_Clicked_1"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
